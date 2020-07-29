@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+       input[type="text"],
+      select {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 20px;
+        border: 1px solid black;
+      }
+
+      input[type="submit"] {
+        width: 90px;
+        height: 40px;
+        background-color: green;
+        color: white;
+        margin-top: 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: blue;
+        width: 90px;
+      }
+
+      .form {
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        width: 50%;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      label {
+        font-size: 30px;
+      }
+      textarea {
+        font-size: large;
+        font-family: sans-serif;
+        padding: 12px 20px;
+        margin: 8px 0;
+        width: 90%;
+        border: 1px solid black;
+      }
+      .fields {
+        margin: 0px 0px 0px 50px;
+        padding: 0;
+      }
+      /* MOBILE */
+      @media screen and (max-width: 768px) {
+        /* body {
+          display: none;
+        } */
+        .form {
+          width: 100%;
+        }
+        .fields {
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <nav>
+      <div class="logo">
+        <img class="image" src="./images/Logo/Group 2.png" alt="kd explore" />
+        <h4 id=textLogo>LOGO</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./notes.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="./app.js"></script>
+    <div class="form">
+        <form action="">
+        <div class="fields">
+        <label for="firstName">First Name</label>
+        <br>
+        <input placeholder="Your name.." type="text">
+        <br>
+        <label for="lastName">Last Name</label>
+        <br>
+        <input placeholder="Your last name.." type="text">
+        <br>
+        <label for="">Country</label>
+        <br>
+        <select name="" id="">
+            <option value="">Ghana</option>
+            <option value="">Nigeria</option>
+            <option value="">Ivory Coast</option>
+        </select>
+        <br>
+        <label for="">Subject</label>
+        <br>
+        <textarea 
+        placeholder="Write something.." 
+        name="" 
+        id="write" 
+        cols="30" 
+        rows="10"></textarea>
+        <br>
+        <input type="submit" value="submit" />
+        </div>
+        </form>
+    </div>
+</body>
+</html>

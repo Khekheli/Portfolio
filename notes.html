@@ -4,8 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .all{
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 40px;
+        }
+        .heading{
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .date{
+            background-color:#800080;
+            color: white;
+            width: 100%;
+            border-radius: 5px;
+            padding: 18px;
+            margin: auto;
+            margin-top: 10px;
+            transition: 0.4s;
+            display: inline-block;
+        }
+        .date::after{
+            content:"\25BC";
+            padding-left: 100%;
+        }
+        .active,
+        .date:hover{
+            background-color: #5e0c5e;
+        }
+
+        .active::after{
+            content:"\25B2";
+        }
+
+        .notes{
+            padding: 0px 18px;
+            margin-top: 10px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        @media screen and (max-width: 768px){
+            .all{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin-top: 20px;
+            }
+        }
+        
+
+    </style>
 </head>
 <body>
-    
+    <nav>
+      <div class="logo">
+        <img class="image" src="./images/Logo/Group 2.png" alt="kd explore" />
+        <h4 id=textLogo>LOGO</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./notes.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="./app.js"></script>
+    <div class="all">
+        <div class="heading">
+            <h2>
+               &#128211
+                This is the heading for my page
+            </h2>
+            <p>Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <button class="date">
+            DAY 1
+            <br>
+            Wednesday, 29th July
+        </button>
+            <div class="notes">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloribus odit accusamus aperiam quia minima natus delectus qui veniam quod, atque voluptate voluptates non illum voluptatum adipisci. Repellendus id nam eum aspernatur deserunt optio maiores illum nulla porro, unde facilis labore fuga explicabo quam, consequatur quod iste odit culpa sit.</p>
+            </div>
+        <button class="date">
+            DAY 2
+            <br>
+            Thursday, 30th July
+        </button>
+            <div class="notes">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloribus odit accusamus aperiam quia minima natus delectus qui veniam quod, atque voluptate voluptates non illum voluptatum adipisci. Repellendus id nam eum aspernatur deserunt optio maiores illum nulla porro, unde facilis labore fuga explicabo quam, consequatur quod iste odit culpa sit.</p>
+            </div>
+        <button class="date">
+            DAY 3
+            <br>
+            Friday 31th
+        </button>
+            <div class="notes">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis doloribus odit accusamus aperiam quia minima natus delectus qui veniam quod, atque voluptate voluptates non illum voluptatum adipisci. Repellendus id nam eum aspernatur deserunt optio maiores illum nulla porro, unde facilis labore fuga explicabo quam, consequatur quod iste odit culpa sit.</p>
+            </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("date");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if(panel.style.maxHeight){
+                    panel.style.maxHeight=null;
+                }else{
+                    panel.style.maxHeight=panel.scrollHeight+"px";
+                }
+            })
+        }
+    </script>
 </body>
 </html>
