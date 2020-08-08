@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        background-image: linear-gradient(90deg, purple, brown);
+      }
+
+      .btn-outline-success {
+        background-color: rgb(6, 187, 75);
+        color: white;
+      }
+
+      .navbar .navbar-expand-sm {
+        background-color: purple;
+      }
+
+      h4 {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navbar-toggler {
+        background-color: purple;
+        color: white;
+      }
+
+      .card-columns {
+        padding: 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" colo>
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="w-75 h-5">
+        <div class="carousel slide" id="carouselExample" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="carouselExample"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="carouselExample" data-slide-to="1"></li>
+            <li data-target="carouselExample" data-slide-to="2"></li>
+            <li data-target="carouselExample" data-slide-to="3"></li>
+            <li data-target="carouselExample" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/annie-spratt-qyAka7W5uMY-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/capturing-the-human-heart-TrhLCn1abMU-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/clement-h-95YRwf6CNw8-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/felipe-giacometti-zF7eVLT0Je0-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+          </div>
+          <a
+            href="#carouselExample"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            href="#carouselExample"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h4>Image Slider</h4>
+
+    <div class="card-columns">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/assassins_creed_valhalla_6-wallpaper-1366x768.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h4 class="card-title">AC Valhalla</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            vitae adipisci ipsum similique temporibus, blanditiis alias cumque
+            nobis ratione, perspiciatis officia distinctio necessitatibus
+            aperiam ipsa?
+          </p>
+          <a href="#" class="btn btn-primary">Click Here for More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/rick_and_morty_car_rainbow-wallpaper-1366x768.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h4 class="card-title">Rick and Morty</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            vitae adipisci ipsum similique temporibus, blanditiis alias cumque
+            nobis ratione, perspiciatis officia distinctio necessitatibus
+            aperiam ipsa?
+          </p>
+          <a href="#" class="btn btn-primary">Click Here for More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="./images/need_for_speed_heat_video_game_2-wallpaper-1366x768.jpg"
+          alt=""
+        />
+        <div class="card-body">
+          <h4 class="card-title">NFS Heat</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            vitae adipisci ipsum similique temporibus, blanditiis alias cumque
+            nobis ratione, perspiciatis officia distinctio necessitatibus
+            aperiam ipsa?
+          </p>
+          <a href="#" class="btn btn-primary">Click Here for More</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
